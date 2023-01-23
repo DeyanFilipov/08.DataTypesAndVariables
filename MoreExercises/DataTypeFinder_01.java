@@ -8,19 +8,20 @@ public class DataTypeFinder_01 {
 
         String input = scanner.nextLine();
 
-        while (!input.equals("END")) {
+        while (!input.equals("END")){
             Scanner type = new Scanner(input);
-            if (type.hasNextBoolean()) {
+            if (type.hasNextBoolean()){
                 System.out.println(input + " is boolean type");
-            } else if (type.hasNextInt()) {
+            } else if (type.hasNextInt()){
                 System.out.println(input + " is integer type");
-            } else if (type.hasNextDouble()) {
+            } else if (type.hasNextDouble()){
                 System.out.println(input + " is floating point type");
-            } else if (input.length() == 1) {
+            } else if (input.length() == 1){
                 System.out.println(input + " is character type");
             } else if (type.hasNextLine()) {
                 System.out.println(input + " is string type");
             }
+
             input = scanner.nextLine();
         }
     }
